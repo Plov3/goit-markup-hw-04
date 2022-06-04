@@ -138,11 +138,13 @@ img {
     margin-left: 50px;
 }
 .contact-link {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--third-color);
+    align-items: center;
 }
 .current {
     color: var(--main-color);
@@ -153,12 +155,26 @@ img {
 .contact-link:focus {
     color: var(--main-color);
 }
+.icon {
+    margin-right: 10px;
+    fill: var(--third-color);
+}
+.contact-link:hover .icon,
+.contact-link:focus .icon {
+    fill: var(--main-color);
+}
 /* /header */
 /* hero */
 .hero {
     background: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background.png) ;
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
+    ;
 }
 .hero-header {
     font-weight: 900;
@@ -217,6 +233,11 @@ img {
     font-size: 14px;
     line-height: 1.71;
 }
+.advantage-icon {
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
 /* /advantages */
 /* examples */
 .examples {
@@ -259,6 +280,11 @@ img {
 }
 
 /* /our team */
+/* clients */
+.clients {
+    padding-top: 58px;
+}
+/* /clients */
 /* filter */
 .portfolio-filter {
     
