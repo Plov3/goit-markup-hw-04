@@ -24,8 +24,8 @@
                 </ul>
             </nav>
             <ul class="contacts list">
-                <li class="contact"> <a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a> </li>
-                <li class="contact"> <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a> </li>
+                <li class="contact"> <a href="mailto:info@devstudio.com" class="contact-link mail link"><svg class="icon" width="16px" hidth="12px"><use href="./images/icons.svg#icon-envelope"></use></svg> info@devstudio.com</a></li>
+                <li class="contact"> <a href="tel:+380961111111" class="contact-link tel link"><svg class="icon" width="10px" hidth="16px"><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a> </li>
             </ul>
         </div>        
     </header>
@@ -133,14 +133,25 @@
     <!--подвал-->
     <footer class="footer">
         <div class="container footer-container">
-            <a href="index.html" class="logo link logo-bot">Web<span class="logo-half-dark">Studio</span></a>
-            <address class="contacts-list" id="3">
-                <ul class="contacts-bot list">
-                    <li class="contact-bot"><a class="footer-contact-link link address map" href="https://goo.gl/maps/tf9V9uD1shakLC2a6" target="_blank" rel="nooppener noreferal">г. Киев, пр-т Леси Украинки, 26</a> </li>
-                    <li class="contact-bot"><a class="footer-contact-link link address" href="mailto:info@example.com">info@example.com</a> </li>
-                    <li class="contact-bot"><a class="footer-contact-link link address" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+            <div class="contacts-container">
+                <a href="index.html" class="logo link logo-bot">Web<span class="logo-half-dark">Studio</span></a>
+                <address class="contacts-list" id="3">
+                    <ul class="contacts-bot list">
+                        <li class="contact-bot"><a class="footer-contact-link link address map" href="https://goo.gl/maps/tf9V9uD1shakLC2a6" target="_blank" rel="nooppener noreferal">г. Киев, пр-т Леси Украинки, 26</a> </li>
+                        <li class="contact-bot"><a class="footer-contact-link link address" href="mailto:info@example.com">info@example.com</a> </li>
+                        <li class="contact-bot"><a class="footer-contact-link link address" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div>
+            <h2 class="socials-header">присоединяйтесь</h2>
+            <ul class="list footer-socials">
+                <li class="footer-social-link-item"> <a class="footer-social-link link" href=""> <svg class="footer-social-link-icon" width="20px" height="20px"><use href="./images/icons.svg#icon-instagram"><span class="visually-hidden">Instagram</span></use></svg></a></li>
+                <li class="footer-social-link-item"> <a class="footer-social-link link" href=""> <svg class="footer-social-link-icon" width="20px" height="20px"><use href="./images/icons.svg#icon-twitter"><span class="visually-hidden">Twitter</span></use></svg></a></li>
+                <li class="footer-social-link-item"> <a class="footer-social-link link" href=""> <svg class="footer-social-link-icon" width="20px" height="20px"><use href="./images/icons.svg#icon-facebook"><span class="visually-hidden">Facebook</span></use></svg></a></li>
+                <li class="footer-social-link-item"> <a class="footer-social-link link" href=""> <svg class="footer-social-link-icon" width="20px" height="20px"><use href="./images/icons.svg#icon-linkedin"><span class="visually-hidden">LinkedIn</span></use></svg></a></li>
+            </ul>
+            </div>
         </div>
     </footer>
 </body>
