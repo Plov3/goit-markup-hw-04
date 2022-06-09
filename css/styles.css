@@ -174,6 +174,10 @@ img {
     background-repeat: no-repeat;
     background-size: 1600px;
     background-position: center;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 .hero-header {
     font-weight: 900;
@@ -234,8 +238,8 @@ img {
     line-height: 1.71;
 }
 .advantage-icons {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    height: 120px;
+    align-items: center;
     background: #F5F4FA;
     border-radius: 4px;
     display: flex;
@@ -316,9 +320,6 @@ img {
 }
 /* /our team */
 /* clients */
-.clients {
-    padding-top: 58px;
-}
 .clients-units {
     margin-top: 50px;
     display: flex;
@@ -375,6 +376,7 @@ img {
     border-radius: 4px;
     cursor: pointer;
     padding: 6px 22px;
+    border-width: 0px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -408,12 +410,15 @@ img {
     padding: 20px 24px;
     border: #EEEEEE solid 1px;
     border-top: none;
-}
+}   
 .portfolio-example:nth-child(-n+6) {
     margin-bottom: 30px;
 }
-.portfolio-example:hover,
-.portfolio-example:focus  {
+.portfolio-link {
+    display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* /filter */
@@ -427,16 +432,14 @@ img {
 }
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 .contacts-container {
-    width: 251px;
-    display: flex;
-    flex-direction: column;
     margin-right: 70px;
-    margin-top: 60px;
 }
 
 .logo-bot {
+    display: block;
     margin-bottom: 20px;
 }
 .logo-half-dark {
@@ -472,15 +475,12 @@ img {
     color: var(--main-color);
 }
 .socials-header {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 72px;
     margin-bottom: 20px;
 }
 .footer-socials {
